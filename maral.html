@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>محصولات گل - مارال</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .product-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-name {
+            font-size: 1.3rem;
+            color: #2d5016;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            color: #e74c3c;
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin: 15px 0;
+        }
+        .product-desc {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌸 فروشگاه گل شیراز</h1>
+        <p>آدرس: شیراز، خیابان فردوسی، کوچه ۹، دانشگاه ملی مهارت الزهرا</p>
+    </header>
+
+    <nav>
+        <a href="index.html">خانه</a>
+        <a href="maral.html" class="active">محصولات (مارال)</a>
+        <a href="atena.html">سبد خرید (آتنا)</a>
+        <a href="zahra.html">ثبت نام (زهرا)</a>
+        <a href="hoorieh.html">تماس (حوریه)</a>
+        <a href="mahboobeh.html">درباره ما (محبوبه)</a>
+        <a href="masoumeh.html">مقالات (معصومه)</a>
+    </nav>
+
+    <main class="container">
+        <div class="member-card">
+            <div class="member-header">
+                <img src="https://images.unsplash.com/photo-1494790108755-2616c113a1c4?w=150&h=150&fit=crop&crop=face" 
+                     alt="مارال" class="member-photo">
+                <div class="member-info">
+                    <h2>مارال</h2>
+                    <p class="role">مدیر محصولات</p>
+                    <p><i class="fas fa-envelope"></i> maral@flower-shop.ir</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3><i class="fas fa-leaf"></i> گل‌های موجود در فروشگاه</h3>
+                <p class="section-desc">بهترین گل‌های شیراز با کیفیت عالی</p>
+            </div>
+
+            <div class="product-container">
+                <!-- گل ۱ -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1516048015710-7a3b4c86be43?w=400&h=300&fit=crop" 
+                         alt="گل رز قرمز" class="product-image">
+                    <div class="product-info">
+                        <h4 class="product-name">رز قرمز شیراز</h4>
+                        <p class="product-desc">رز قرمز مرغوب با عطر بی‌نظیر، مناسب برای مناسبت‌های خاص</p>
+                        <div class="product-price">۸۵,۰۰۰ تومان</div>
+                        <button class="btn"><i class="fas fa-cart-plus"></i> افزودن به سبد</button>
+                    </div>
+                </div>
+
+                <!-- گل ۲ -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1545243421-89e5c9b6d12c?w=400&h=300&fit=crop" 
+                         alt="لاله" class="product-image">
+                    <div class="product-info">
+                        <h4 class="product-name">لاله رنگارنگ</h4>
+                        <p class="product-desc">لاله تازه با رنگ‌های متنوع، زیبایی بخش فضای خانه</p>
+                        <div class="product-price">۶۵,۰۰۰ تومان</div>
+                        <button class="btn"><i class="fas fa-cart-plus"></i> افزودن به سبد</button>
+                    </div>
+                </div>
+
+                <!-- گل ۳ -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1569965335217-61f54b5d4c3a?w=400&h=300&fit=crop" 
+                         alt="ارکیده" class="product-image">
+                    <div class="product-info">
+                        <h4 class="product-name">ارکیده سفید</h4>
+                        <p class="product-desc">ارکیده اصیل مخصوص دکوراسیون، ماندگاری بالا</p>
+                        <div class="product-price">۱۲۰,۰۰۰ تومان</div>
+                        <button class="btn"><i class="fas fa-cart-plus"></i> افزودن به سبد</button>
+                    </div>
+                </div>
+
+                <!-- گل ۴ -->
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1517191434949-5e90cd67d2b6?w-400&h=300&fit=crop" 
+                         alt="گل آفتابگردان" class="product-image">
+                    <div class="product-info">
+                        <h4 class="product-name">آفتابگردان</h4>
+                        <p class="product-desc">گل آفتابگردان شاداب، نماد انرژی و زندگی</p>
+                        <div class="product-price">۵۵,۰۰۰ تومان</div>
+                        <button class="btn"><i class="fas fa-cart-plus"></i> افزودن به سبد</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="member-task">
+                <h4><i class="fas fa-tasks"></i> مسئولیت‌های من در پروژه:</h4>
+                <ul>
+                    <li>✅ نمایش محصولات با عکس و توضیحات</li>
+                    <li>✅ قیمت‌گذاری و تخفیف‌ها</li>
+                    <li>✅ دسته‌بندی گل‌ها</li>
+                    <li>✅ سیستم فیلتر و جستجو</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>آدرس: شیراز، خیابان فردوسی، کوچه ۹، دانشگاه ملی مهارت الزهرا</p>
+        <p>تلفن: ۰۷۱-۳۶۲۵۴۸۷۹</p>
+    </footer>
+</body>
+</html>

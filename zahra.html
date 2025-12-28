@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>ثبت نام - زهرا</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .auth-container {
+            max-width: 500px;
+            margin: 30px auto;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .auth-tabs {
+            display: flex;
+            background: #f8f9fa;
+        }
+        .auth-tab {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+            background: none;
+            border: none;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .auth-tab.active {
+            background: white;
+            color: #4CAF50;
+            border-bottom: 3px solid #4CAF50;
+        }
+        .auth-form {
+            padding: 30px;
+            display: none;
+        }
+        .auth-form.active {
+            display: block;
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        .form-input {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+        .form-input:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+        .form-check {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 20px 0;
+        }
+        .auth-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .auth-btn:hover {
+            transform: translateY(-3px);
+        }
+        .social-login {
+            text-align: center;
+            margin-top: 25px;
+            padding-top: 25px;
+            border-top: 2px solid #eee;
+        }
+        .social-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        .social-btn {
+            flex: 1;
+            padding: 12px;
+            border: 2px solid #ddd;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>👤 حساب کاربری</h1>
+        <p>آدرس: شیراز، خیابان فردوسی، کوچه ۹، دانشگاه ملی مهارت الزهرا</p>
+    </header>
+
+    <nav>
+        <a href="index.html">خانه</a>
+        <a href="maral.html">محصولات (مارال)</a>
+        <a href="atena.html">سبد خرید (آتنا)</a>
+        <a href="zahra.html" class="active">ثبت نام (زهرا)</a>
+        <a href="hoorieh.html">تماس (حوریه)</a>
+        <a href="mahboobeh.html">درباره ما (محبوبه)</a>
+        <a href="masoumeh.html">مقالات (معصومه)</a>
+    </nav>
+
+    <main class="container">
+        <div class="member-card">
+            <div class="member-header">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face" 
+                     alt="زهرا" class="member-photo">
+                <div class="member-info">
+                    <h2>زهرا</h2>
+                    <p class="role">مدیر سیستم کاربران</p>
+                    <p><i class="fas fa-envelope"></i> zahra@flower-shop.ir</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3><i class="fas fa-user-plus"></i> ورود / ثبت نام</h3>
+                <p class="section-desc">برای خرید گل‌های زیبا ثبت نام کنید</p>
+            </div>
+
+            <div class="auth-container">
+                <div class="auth-tabs">
+                    <button class="auth-tab active" onclick="showForm('login')">ورود</button>
+                    <button class="auth-tab" onclick="showForm('register')">ثبت نام</button>
+                </div>
+
+                <!-- فرم ورود -->
+                <div class="auth-form active" id="loginForm">
+                    <h3 style="text-align: center; margin-bottom: 25px; color: #2d5016;">خوش آمدید</h3>
+                    
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-envelope"></i> ایمیل</label>
+                        <input type="email" class="form-input" placeholder="example@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-lock"></i> رمز عبور</label>
+                        <input type="password" class="form-input" placeholder="رمز عبور خود را وارد کنید">
+                        <a href="#" style="display: block; text-align: left; margin-top: 10px; color: #4CAF50; text-decoration: none;">
+                            رمز عبور را فراموش کرده‌اید؟
+                        </a>
+                    </div>
+                    
+                    <button class="auth-btn">
+                        <i class="fas fa-sign-in-alt"></i> ورود به حساب
+                    </button>
+                    
+                    <div class="social-login">
+                        <p style="color: #666; margin-bottom: 15px;">یا با حساب اجتماعی وارد شوید:</p>
+                        <div class="social-buttons">
+                            <button class="social-btn">
+                                <i class="fab fa-google" style="color: #DB4437;"></i> Google
+                            </button>
+                            <button class="social-btn">
+                                <i class="fab fa-instagram" style="color: #E1306C;"></i> Instagram
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- فرم ثبت نام -->
+                <div class="auth-form" id="registerForm">
+                    <h3 style="text-align: center; margin-bottom: 25px; color: #2d5016;">ایجاد حساب جدید</h3>
+                    
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-user"></i> نام کامل</label>
+                        <input type="text" class="form-input" placeholder="نام و نام خانوادگی">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-phone"></i> شماره موبایل</label>
+                        <input type="tel" class="form-input" placeholder="۰۹۱۲۳۴۵۶۷۸۹">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-envelope"></i> ایمیل</label>
+                        <input type="email" class="form-input" placeholder="example@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-lock"></i> رمز عبور</label>
+                        <input type="password" class="form-input" placeholder="حداقل ۸ کاراکتر">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label"><i class="fas fa-lock"></i> تکرار رمز عبور</label>
+                        <input type="password" class="form-input" placeholder="رمز عبور را مجدد وارد کنید">
+                    </div>
+                    
+                    <div class="form-check">
+                        <input type="checkbox" id="agreeTerms">
+                        <label for="agreeTerms">قوانین و شرایط فروشگاه گل شیراز را می‌پذیرم</label>
+                    </div>
+                    
+                    <button class="auth-btn">
+                        <i class="fas fa-user-plus"></i> ایجاد حساب
+                    </button>
+                </div>
+            </div>
+
+            <div class="member-task">
+                <h4><i class="fas fa-tasks"></i> مسئولیت‌های من در پروژه:</h4>
+                <ul>
+                    <li>✅ سیستم ثبت نام و ورود</li>
+                    <li>✅ احراز هویت ایمن</li>
+                    <li>✅ بازیابی رمز عبور</li>
+                    <li>✅ پنل کاربری</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>آدرس: شیراز، خیابان فردوسی، کوچه ۹، دانشگاه ملی مهارت الزهرا</p>
+        <p>تلفن: ۰۷۱-۳۶۲۵۴۸۷۹</p>
+    </footer>
+
+    <script>
+        function showForm(formType) {
+            // مخفی کردن همه فرم‌ها
+            document.getElementById('loginForm').classList.remove('active');
+            document.getElementById('registerForm').classList.remove('active');
+            
+            // غیرفعال کردن همه تب‌ها
+            document.querySelectorAll('.auth-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+            
+            // نمایش فرم انتخاب شده
+            if (formType === 'login') {
+                document.getElementById('loginForm').classList.add('active');
+                document.querySelectorAll('.auth-tab')[0].classList.add('active');
+            } else {
+                document.getElementById('registerForm').classList.add('active');
+                document.querySelectorAll('.auth-tab')[1].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>

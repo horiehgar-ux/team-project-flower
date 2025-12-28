@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>فروشگاه گل شیراز - صفحه اصلی</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(76, 175, 80, 0.9), rgba(46, 125, 50, 0.9)), 
+                        url('https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&h=500&fit=crop');
+            background-size: cover;
+            color: white;
+            padding: 80px 40px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+        .team-intro {
+            text-align: center;
+            margin: 50px 0;
+        }
+        .team-intro h2 {
+            color: #2d5016;
+            font-size: 2.2rem;
+            margin-bottom: 20px;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin: 40px 0;
+        }
+        .team-member {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        .team-member:hover {
+            transform: translateY(-10px);
+        }
+        .member-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 2rem;
+        }
+        .instructions {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            margin-top: 50px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .code-block {
+            background: #2c3e50;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            font-family: monospace;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🌸 فروشگاه گل شیراز</h1>
+        <p>آدرس: شیراز، خیابان فردوسی، کوچه ۹، دانشگاه ملی مهارت الزهرا</p>
+    </header>
+
+    <nav>
+        <a href="index.html" class="active">خانه</a>
+        <a href="maral.html">محصولات (مارال)</a>
+        <a href="atena.html">سبد خرید (آتنا)</a>
+        <a href="zahra.html">ثبت نام (زهرا)</a>
+        <a href="hoorieh.html">تماس (حوریه)</a>
+        <a href="mahboobeh.html">درباره ما (محبوبه)</a>
+        <a href="masoumeh.html">مقالات (معصومه)</a>
+    </nav>
+
+    <main class="container">
+        <div class="hero">
+            <h1>به فروشگاه گل شیراز خوش آمدید</h1>
+            <p>تازه‌ترین و زیباترین گل‌های شیراز را از ما بخواهید</p>
+            <button class="btn-large">
+                <i class="fas fa-shopping-cart"></i> شروع خرید
+            </button>
+        </div>
+
+        <div class="team-intro">
+            <h2>👥 تیم توسعه پروژه</h2>
+            <p>درس: توسعه نرم‌افزار | استاد: سرکار خانم مریم قنبری</p>
+        </div>
+
+        <div class="team-grid">
+            <div class="team-member">
+                <div class="member-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>مارال</h3>
+                <p>مدیر محصولات</p>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">
+                    مسئول نمایش و مدیریت محصولات گل
+                </p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>آتنا</h3>
+                <p>مدیر سبد خرید</p>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">
+                    مسئول سیستم خرید و پرداخت
+                </p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>زهرا</h3>
+                <p>مدیر کاربران</p>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">
+                    مسئول ثبت نام و ورود
+                </p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>حوریه</h3>
+                <p>مدیر ارتباطات</p>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">
+                    مسئول تماس با مشتریان
+                </p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>محبوبه</h3>
+                <p>مدیر محتوا</p>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">
+                    مسئول صفحه درباره ما
+                </p>
+            </div>
+
+            <div class="team-member">
+                <div class="member-icon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <h3>معصومه</h3>
+                <p>مدیر مقالات</p>
+                <p style="color: #666; font-size: 0.9rem; margin-top: 10px;">
+                    مسئول مقالات و آموزش
+                </p>
+            </div>
+        </div>
+
+    <footer>
+        <p>آدرس: شیراز، خیابان فردوسی، کوچه ۹، دانشگاه ملی مهارت الزهرا</p>
+        <p>تلفن: ۰۷۱-۳۶۲۵۴۸۷۹ | ایمیل: info@flower-shiraz.ir</p>
+        <p style="margin-top: 15px; color: #888;">
+            © ۱۴۰۳ - پروژه تیمی درس توسعه نرم‌افزار
+        </p>
+    </footer>
+</body>
+</html>

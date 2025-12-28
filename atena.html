@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>سبد خرید - آتنا</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .cart-container {
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            margin-top: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .cart-item {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            border-bottom: 2px solid #eee;
+            gap: 20px;
+        }
+        .cart-item:last-child {
+            border-bottom: none;
+        }
+        .cart-item-image {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .cart-item-info {
+            flex-grow: 1;
+        }
+        .item-name {
+            font-size: 1.2rem;
+            color: #2d5016;
+            margin-bottom: 5px;
+        }
+        .item-price {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .qty-btn {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: none;
+            background: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        .cart-summary {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-top: 30px;
+        }
+        .summary-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px dashed #ddd;
+        }
+        .total-row {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2d5016;
+            border-bottom: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🛒 سبد خرید گل</h1>
+        <p>آدرس: شیراز، خیابان فردوسی، کوچه ۹، دانشگاه ملی مهارت الزهرا</p>
+    </header>
+
+    <nav>
+        <a href="index.html">خانه</a>
+        <a href="maral.html">محصولات (مارال)</a>
+        <a href="atena.html" class="active">سبد خرید (آتنا)</a>
+        <a href="zahra.html">ثبت نام (زهرا)</a>
+        <a href="hoorieh.html">تماس (حوریه)</a>
+        <a href="mahboobeh.html">درباره ما (محبوبه)</a>
+        <a href="masoumeh.html">مقالات (معصومه)</a>
+    </nav>
+
+    <main class="container">
+        <div class="member-card">
+            <div class="member-header">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop&crop=face" 
+                     alt="آتنا" class="member-photo">
+                <div class="member-info">
+                    <h2>آتنا</h2>
+                    <p class="role">مدیر سبد خرید</p>
+                    <p><i class="fas fa-envelope"></i> atena@flower-shop.ir</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3><i class="fas fa-shopping-cart"></i> سبد خرید شما</h3>
+                <p class="section-desc">محصولات انتخاب شده خود را مدیریت کنید</p>
+            </div>
+
+            <div class="cart-container">
+                <!-- آیتم ۱ -->
+                <div class="cart-item">
+                    <img src="https://images.unsplash.com/photo-1516048015710-7a3b4c86be43?w=150&h=150&fit=crop" 
+                         alt="رز قرمز" class="cart-item-image">
+                    <div class="cart-item-info">
+                        <h4 class="item-name">رز قرمز شیراز</h4>
+                        <p class="item-price">۸۵,۰۰۰ تومان</p>
+                        <p>تازه و معطر - تحویل در شیراز</p>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="qty-btn"><i class="fas fa-minus"></i></button>
+                        <span style="font-size: 1.2rem; padding: 0 15px;">۲</span>
+                        <button class="qty-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div style="font-weight: bold; color: #2d5016; min-width: 120px; text-align: left;">
+                        ۱۷۰,۰۰۰ تومان
+                    </div>
+                    <button class="btn-danger"><i class="fas fa-trash"></i></button>
+                </div>
+
+                <!-- آیتم ۲ -->
+                <div class="cart-item">
+                    <img src="https://images.unsplash.com/photo-1545243421-89e5c9b6d12c?w=150&h=150&fit=crop" 
+                         alt="لاله" class="cart-item-image">
+                    <div class="cart-item-info">
+                        <h4 class="item-name">لاله رنگارنگ</h4>
+                        <p class="item-price">۶۵,۰۰۰ تومان</p>
+                        <p>رنگ‌های متنوع - مناسب هدیه</p>
+                    </div>
+                    <div class="quantity-controls">
+                        <button class="qty-btn"><i class="fas fa-minus"></i></button>
+                        <span style="font-size: 1.2rem; padding: 0 15px;">۱</span>
+                        <button class="qty-btn"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div style="font-weight: bold; color: #2d5016; min-width: 120px; text-align: left;">
+                        ۶۵,۰۰۰ تومان
+                    </div>
+                    <button class="btn-danger"><i class="fas fa-trash"></i></button>
+                </div>
+            </div>
+
+            <div class="cart-summary">
+                <div class="summary-row">
+                    <span>جمع کل کالاها:</span>
+                    <span>۲۳۵,۰۰۰ تومان</span>
+                </div>
+                <div class="summary-row">
+                    <span>هزینه ارسال در شیراز:</span>
+                    <span>۳۰,۰۰۰ تومان</span>
+                </div>
+                <div class="summary-row">
+                    <span>تخفیف:</span>
+                    <span style="color: #27ae60;">۲۵,۰۰۰ تومان</span>
+                </div>
+                <div class="summary-row total-row">
+                    <span>مبلغ قابل پرداخت:</span>
+                    <span>۲۴۰,۰۰۰ تومان</span>
+                </div>
+                
+                <button class="btn-large" style="margin-top: 20px; width: 100%;">
+                    <i class="fas fa-lock"></i> پرداخت امن
+                </button>
+            </div>
+
+            <div class="member-task">
+                <h4><i class="fas fa-tasks"></i> مسئولیت‌های من در پروژه:</h4>
+                <ul>
+                    <li>✅ مدیریت سبد خرید کاربران</li>
+                    <li>✅ محاسبه قیمت نهایی</li>
+                    <li>✅ اعمال تخفیف‌ها</li>
+                    <li>✅ سیستم پرداخت امن</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>آدرس: شیراز، خیابان فردوسی، کوچه ۹، دانشگاه ملی مهارت الزهرا</p>
+        <p>تلفن: ۰۷۱-۳۶۲۵۴۸۷۹</p>
+    </footer>
+</body>
+</html>

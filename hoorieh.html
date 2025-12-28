@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>تماس با ما - حوریه</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        .contact-info-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 25px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        .contact-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+        .contact-details h4 {
+            color: #2d5016;
+            margin-bottom: 5px;
+        }
+        .contact-form-card {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-label {
+            display: block;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: 500;
+        }
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border 0.3s;
+        }
+        .form-control:focus {
+            border-color: #4CAF50;
+            outline: none;
+        }
+        .map-container {
+            margin-top: 40px;
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .map-placeholder {
+            height: 300px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        .map-placeholder i {
+            font-size: 60px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>📞 تماس با فروشگاه گل شیراز</h1>
+        <p>آدرس: شیراز، خیابان فردوسی، کوچه ۹، دانشگاه ملی مهارت الزهرا</p>
+    </header>
+
+    <nav>
+        <a href="index.html">خانه</a>
+        <a href="maral.html">محصولات (مارال)</a>
+        <a href="atena.html">سبد خرید (آتنا)</a>
+        <a href="zahra.html">ثبت نام (زهرا)</a>
+        <a href="hoorieh.html" class="active">تماس (حوریه)</a>
+        <a href="mahboobeh.html">درباره ما (محبوبه)</a>
+        <a href="masoumeh.html">مقالات (معصومه)</a>
+    </nav>
+
+    <main class="container">
+        <div class="member-card">
+            <div class="member-header">
+                <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?w=150&h=150&fit=crop&crop=face" 
+                     alt="حوریه" class="member-photo">
+                <div class="member-info">
+                    <h2>حوریه</h2>
+                    <p class="role">مدیر ارتباط با مشتریان</p>
+                    <p><i class="fas fa-envelope"></i> hoorieh@flower-shop.ir</p>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3><i class="fas fa-headset"></i> راه‌های ارتباطی</h3>
+                <p class="section-desc">برای سوالات و پیشنهادات با ما در تماس باشید</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- اطلاعات تماس -->
+                <div class="contact-info-card">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>آدرس فروشگاه</h4>
+                            <p>شیراز، خیابان فردوسی، کوچه ۹</p>
+                            <p>دانشگاه ملی مهارت الزهرا</p>
+                            <p style="color: #666; font-size: 0.9rem; margin-top: 5px;">
+                                <i class="fas fa-clock"></i> ساعت کاری: ۸ صبح تا ۱۰ شب
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>تلفن‌های تماس</h4>
+                            <p>تلفن ثابت: ۰۷۱-۳۶۲۵۴۸۷۹</p>
+                            <p>موبایل: ۰۹۱۷۱۲۳۴۵۶۷</p>
+                            <p>واتساپ: ۰۹۳۵۵۵۵۵۵۵۵</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>ایمیل و شبکه‌های اجتماعی</h4>
+                            <p>ایمیل: info@flower-shiraz.ir</p>
+                            <p>اینستاگرام: @flower_shiraz</p>
+                            <p>تلگرام: @flowershop_shiraz</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>ساعت کاری</h4>
+                            <p>شنبه تا چهارشنبه: ۸:۰۰ تا ۲۲:۰۰</p>
+                            <p>پنجشنبه: ۸:۰۰ تا ۲۰:۰۰</p>
+                            <p>جمعه: ۹:۰۰ تا ۱۸:۰۰</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- فرم تماس -->
+                <div class="contact-form-card">
+                    <h3 style="color: #2d5016; margin-bottom: 25px;">ارسال پیام</h3>
+                    
+                    <div class="form-group">
+                        <label class="form-label">نام شما</label>
+                        <input type="text" class="form-control" placeholder="نام و نام خانوادگی">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">شماره تماس</label>
+                        <input type="tel" class="form-control" placeholder="۰۹۱۲۳۴۵۶۷۸۹">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">ایمیل</label>
+                        <input type="email" class="form-control" placeholder="example@email.com">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">موضوع</label>
+                        <select class="form-control">
+                            <option>انتخاب موضوع</option>
+                            <option>سوال درباره محصولات</option>
+                            <option>مشکل در سفارش</option>
+                            <option>انتقاد یا پیشنهاد</option>
+                            <option>همکاری با ما</option>
+                            <option>سایر</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">متن پیام</label>
+                        <textarea class="form-control" rows="5" placeholder="پیام خود را بنویسید..."></textarea>
+                    </div>
+                    
+                    <button class="btn-large" style="width: 100%;">
+                        <i class="fas fa-paper-plane"></i> ارسال پیام
+                    </button>
+                </div>
+            </div>
+
+            <!-- نقشه -->
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <h3>موقعیت فروشگاه روی نقشه</h3>
+                    <p>شیراز، خیابان فردوسی، کوچه ۹</p>
+                </div>
+            </div>
+
+            <div class="member-task">
+                <h4><i class="fas fa-tasks"></i> مسئولیت‌های من در پروژه:</h4>
+                <ul>
+                    <li>✅ صفحه تماس با اطلاعات کامل</li>
+                    <li>✅ فرم تماس آنلاین</li>
+                    <li>✅ اطلاعات آدرس واقعی شیراز</li>
+                    <li>✅ سیستم پشتیبانی مشتریان</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>آدرس: شیراز، خیابان فردوسی، کوچه ۹، دانشگاه ملی مهارت الزهرا</p>
+        <p>تلفن: ۰۷۱-۳۶۲۵۴۸۷۹</p>
+    </footer>
+</body>
+</html>
